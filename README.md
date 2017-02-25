@@ -1,4 +1,1 @@
-ssm-demo
-========
-
-simple-spring-memcached demo
+## spring，memcached简单例子 mjj
