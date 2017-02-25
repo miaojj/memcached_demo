@@ -16,7 +16,6 @@ import java.util.List;
  */
 @Repository("bookDAO")
 public class BookDAOImpl implements BookDAO {
-    @Override
     @UseJson
     @ReadThroughAssignCache(namespace = "star", assignedKey ="110", expiration = 30)
     public BookDO getBookByName(String name) {

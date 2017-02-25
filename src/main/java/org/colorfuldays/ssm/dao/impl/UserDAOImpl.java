@@ -16,7 +16,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("userDAO")
 public class UserDAOImpl implements UserDAO {
-    @Override
     @UseJson
     @ReadThroughSingleCache(namespace = "star",expiration = 100)
     public UserDO getUserById(@ParameterValueKeyProvider long id) {
@@ -27,7 +26,6 @@ public class UserDAOImpl implements UserDAO {
         return userDO;
     }
 
-    @Override
     public int updateUserDO(UserDO userDO) {
         return 0;
     }
